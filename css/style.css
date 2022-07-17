@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;700&display=swap');
+
+:root {
+    --bg-color: #647e7d;
+    --color-dark: #282828;
+    --color-red: #db3a3a;
+    --color-light: #d7d7d7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-light);
+    background-color: var(--bg-color);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+    width: 44.06px;
+    height: 680px;
+    border-radius: 50px;
+    margin-top: 7%;
+    margin-left: 45%;
+    background-color: var(--color-dark);
+}
+
+nav ul {
+    padding: 20px 0 0 0;
+}
+
+nav ul li {
+    width: 45px;
+    height: 55px;
+    cursor: pointer;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+nav ul li::after {
+    width: 25px;
+    content: '';
+    display: block;
+    margin: -15px auto;
+    opacity: 0.3;
+    border-bottom: 1px solid var(--color-light);
+}
+
+nav ul li:last-child,
+nav ul li:last-child::after {
+    border: none;
+    margin-top: 70px;
+}
+
+nav ul li:hover ul li{
+    display: block;
+}
+
+nav ul li ul li {
+    width: 270px;
+    height: 67px;
+    top: -80px;
+    left: -7px;
+    display: none;
+    position: absolute;
+    box-shadow: 1px 0px 2px var(--color-light);
+    border-radius: 20px 0 20px 0;
+    background-color: var(--color-red);
+}
+
+nav ul li ul li img {
+    margin: 15px auto auto 6px;
+}
+
+nav ul li ul li span {
+    position: relative;
+    top: -20px;
+}
+
+nav ul li ul li span::before {
+    width: 25px;
+    content: '';
+    border-right: 1px solid var(--color-light);
+}
+
+
+
